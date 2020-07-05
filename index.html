@@ -1,0 +1,125 @@
+<!-- HTML and CSS coding project required elements
+.html - doctype, html, head, body, title, p, h2, comment Done
+.css - font-family, color, comment, cascading - external, internal (embedded), in-line
+li, ol, ul, dl, i, A, dt, dd * ordered lists with 2 different numbering, 
+un-numbered lists with 2 different bullet types, nested lists, definition list used appropriately Done
+.css - list-style-type, customized bullets (list-style-image) - look it up in an online resource Done-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- This is the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color:darkgray;
+        }
+    </style>
+    <script src="./index.js"></script>
+</head>
+<div id="page-wrapper">
+    <body>
+        <div class="header">Showcasing Photography</div>
+        <!-- The body div wraps the body-->
+        <div id="body">
+            <p>I wanted to create a page to show off my wife's climbing photography, with the exception of the first picture (which is total junk). 
+                I took that one so she had a picture of herself.</p>
+            <div id="carousel">
+            <!--This section wraps the photos-->
+            <div id="photos">
+                <img src="../WebDev_photos/BigTex.jpg" class="slider">
+                <img src="../WebDev_photos/GreatWhite.jpg" class="slider">
+                <img src="../WebDev_photos/IndianCreek1.jpg" class="slider">
+                <img src="../WebDev_photos/RR.jpg" class="slider">
+                <img src="../WebDev_photos/RRG.jpg" class="slider">
+                <img src="../WebDev_photos/TheFridge.jpg" class="slider">
+            </div>
+            <div id="buttons">
+                <button id="prev">Prev</button>
+                <button id="next">Next</button>
+            </div>
+            </div>
+            <!--I wanted to make a list wrapper so that I could 
+                either make a style for all lists or style them individually-->
+            <div id="listWrapper">
+                <!-- First ordered list for one type of numbering -->
+                <div id="ordered1">
+                    <ol>Locations
+                        <li>Big Tex Cave, Denny's Cove, TN</li>
+                        <li>Main Wall, Promontory, CA</li>
+                        <li>Indian Creek, UT</li>
+                        <li>The Gallery, Red Rocks, NV</li>
+                        <li>Chocolate Factory, Red River Gorge, KY</li>
+                        <li>The Grotto, Table Mountain, CA</li>
+                    </ol>
+                </div>
+                <!-- First unordered list with one type of bullet -->
+                <div id="unordered1">
+                    <ul> Types of climbing depicted in the photos
+                        <li>Sport climbing</li>
+                        <li>Traditional Climbing</li>
+                    </ul>
+                </div>
+                <!-- This is to demonstrate the description list -->
+                <div id="climbByPhoto">
+                    <dl>Type of climb by photo
+                        <dt>Photo 1:</dt>
+                        <dd>Sport</dd>
+                        <dt>Photo 2:</dt>
+                        <dd>Sport</dd>
+                        <dt>Photo 3:</dt>
+                        <dd>Traditional</dd>
+                        <dt>Photo 4:</dt>
+                        <dd>Traditional</dd>
+                        <dt>Photo 5:</dt>
+                        <dd>Sport</dd>
+                        <dt>Photo 6:</dt>
+                        <dd>Sport</dd>
+                    </dl>
+                </div>
+                <!-- Second ordered list to use different number style -->
+                <div id="difficulty">
+                    <ol>Difficulty of each route
+                        <li>5.11a</li>
+                        <li>5.12b/c</li>
+                        <li>5.9</li>
+                        <li>5.12d</li>
+                        <li>5.11d</li>
+                        <li>5.10d</li>
+                    </ol>
+                </div>
+                <!-- Demonstrates nested lists -->
+                <div id="locationsOrdered">
+                    <ol>This list shows the top 3 locations ranked by how well-known they are, as well as includes notable climbs
+                        <li>Red River Gorge</li>
+                        <ul>
+                            <li>Transworld Depravity</li>
+                            <li>Pure Imagination</li>
+                            <li>The Golden Ticket</li>
+                        </ul>
+                        <li>Red Rocks</li>
+                        <!-- In-line CSS -->
+                        <ul style="color: chocolate;">
+                            <li>Epinephrine</li>
+                            <li>Solar Slab</li>
+                            <li>Levitation 29</li>
+                            <li>The Fox</li>
+                        </ul>
+                        <li>Indian Creek</li>
+                        <ul>
+                        <li>Supercrack</li>
+                        <li>Incredible Hand Crack</li>
+                        <li>Scarface</li>
+                         </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+</div>
+</html>

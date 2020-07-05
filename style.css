@@ -1,0 +1,57 @@
+.header {
+    border-style: double;
+    text-align: center;
+    font-size: 40px;
+    background-color: darkgoldenrod;
+}
+
+#carousel {
+    width: 720px;
+    height: 920px;
+    overflow: hidden;
+}
+
+#photos {
+    width: 4200px;
+    height: 920px;
+    position: relative;
+    transition: left 2s;
+    display: flex;
+    border-style: solid;
+    border-color: black;
+}
+
+#photos img {
+    width: 720px;
+    height: 920px;
+}
+
+#buttons {
+    position: absolute;
+}
+
+#listWrapper {
+    display: flex;
+    margin-top: 2%;
+}
+
+/* Modified font family and font color, as well as list style type 
+Ordered list */
+#ordered1 ol {
+    font-family: fantasy;
+    color: darkslategrey;
+    list-style-type: lower-roman;
+}
+
+ /* I put in an image, but it doesn't show up well on the page, either because 
+I did something wrong or because it's just too small to recognize */
+ #unordered1 ul {
+    list-style-image: url("../HTML_proj/WebDev_photos/Bullet_image.jpeg");
+    font-family: sans-serif;
+    margin-right: 1%;
+}  
+
+/* Modified list style type in ordered list */
+#difficulty ol {
+    list-style-type: upper-roman;
+}
